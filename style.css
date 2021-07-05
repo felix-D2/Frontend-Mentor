@@ -1,0 +1,33 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+header
+{
+    background-image:url("images/desktop/header/image-header.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    
+    height: 1000px;
+    width: 1440px;
+    position: relative;
+}
+
+
+
+h1{
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+
+
+nav a
+{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+}
