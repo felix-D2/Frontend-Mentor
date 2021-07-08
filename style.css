@@ -166,7 +166,7 @@ body
 
         .boutons:hover
         {
-            color: #ff0000;
+            color: #696965d3;
         }
 
         .contact:hover
@@ -185,8 +185,8 @@ body
         font-weight: bold;
 
         position:absolute;
-        left:50px;
-        top:18px;
+        left: 80px;
+        top: 25px;
     }
 
 
@@ -360,7 +360,6 @@ body
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-
     }
 
 
@@ -427,4 +426,85 @@ body
     }
 
 
+
+
+
+
+
+    /*              ***Footer***                   */
+
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        max-width: 1440px;
+        width: 96%;
+    }
+
+    #pictures-footer
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    #pictures-footer img
+    {
+        width: 25%; 
+    }
+
+
+    #bottom-footer
+    {
+        background-color:hsl(168, 34%, 41%);
+        height: 190px;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bottom-footer h2
+    {
+        margin-top:30px;
+        margin-bottom: 20px;
+    }
+
+    #data-footer
+    {
+        margin-bottom: 45px;
+    }
+
+    #data-footer a
+    {
+        text-decoration: none;
+        color:black;
+
+        margin: 20px;
+    }
+
+    #data-footer a:hover
+    {
+        color:white;
+    }
+
+
+    #social a
+    {
+        margin: 7px;
+    }
+
+    
+
+
+    #social a:hover
+    {
+        filter: invert(98%) sepia(1%) saturate(2%) hue-rotate(137deg) brightness(150%) contrast(100%);  /*Modification des images svg en blanc*/
+    }
+
+    /*Tuto :            https://qastack.fr/programming/22252472/how-to-change-the-color-of-an-svg-element#:~:text=Si%20vous%20chargez%20SVG%20en,aide%20en%20ligne.*/
+    /*Convertiseur:     https://codepen.io/sosuke/pen/Pjoqqp*/
 
