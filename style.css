@@ -21,7 +21,7 @@ body
 
 
 /*      ***Header***        */
-    header
+    #header
     {
         background-image:url("images/desktop/header/image-header.jpg");
         background-repeat:no-repeat;
@@ -177,7 +177,7 @@ body
 
 
         
-    header p
+    #header p
     {
         font-family: 'Roboto', sans-serif;
         color:rgb(255, 255, 255);
@@ -200,7 +200,7 @@ body
 
 
     /*      Main         */
-    section
+    #section
     {
         display: flex;
         flex-wrap: wrap;
@@ -233,7 +233,7 @@ body
 
         
     }
-    .element:nth-child(1) *{
+    .element:nth-child(1) h2, p{
         margin: 12px;    /* Marges entre les texts*/
         padding: 0 45px;
     }
@@ -283,7 +283,7 @@ body
 
 
 
-    section h2
+    #section h2
     {
         font-family: 'Fraunces', serif;
         
@@ -291,52 +291,45 @@ body
         color: hsl(167, 40%, 24%); /*Dark desaturated cyan (graphic design text)*/
     }
 
-    section a
+
+
+    #section a
     {
         font-family: 'Fraunces', serif;
-        
-        text-decoration: none;
         font-size: 1em;
         text-transform: uppercase;
-
         color: hsl(167, 40%, 24%);
 
+        text-decoration: none;
         display: inline;
-        top: 50%;
-        left: 50%;
-    }
 
-    section a::after
+        padding: 6px 10px;
+        border-radius: 10px;
+    }
+    #learn1 a
     {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 10em;
-        height: 5px;
-        background: hsl(51, 100%, 49%);
-        
-        padding: 0 auto;
-
-        transform: scale(0);
-        transition: transition 0.3s;
+        background: linear-gradient(to top, transparent 10%, hsla(51, 100%, 49%, 0.3) 10.01%, hsla(51, 100%, 49%, 0.3) 40%, transparent 40.01%) no-repeat;
     }
-
-    section a:hover section a::after
+    #learn1 a:hover
     {
-        transform: scale(1);
+        background: linear-gradient(to top, transparent 10%, hsla(51, 100%, 49%, 0.425) 10.01%, hsl(51, 100%, 49%) 40%, transparent 40.01%) no-repeat;
     }
 
 
-    section a:hover
+    #learn2 a
     {
-        /*
-        text-decoration: underline hsl(51, 100%, 49%) 10px ;
-        border-radius: 10px;*/
-
+        background: linear-gradient(to top, transparent 10%, hsla(7, 99%, 70%, 0.3) 10.01%, hsla(7, 99%, 70%, 0.3) 40%, transparent 40.01%) no-repeat;
+    }
+    #learn2 a:hover
+    {
+        background: linear-gradient(to top, transparent 10%, hsl(7, 99%, 70%) 10.01%, hsl(7, 99%, 70%) 40%, transparent 40.01%) no-repeat;
     }
 
 
-    section p
+
+
+
+    #section p
     {
         font-family: 'Roboto', sans-serif;
         
@@ -364,7 +357,7 @@ body
 
 
 
-    .testimonials h2
+    .testimonials h3
     {
         text-align: center;
         position: relative;
@@ -375,6 +368,7 @@ body
 
         text-transform: uppercase;
         font-family: 'Fraunces', serif;
+        color: hsl(210, 4%, 67%);
     }
 
 
@@ -433,7 +427,7 @@ body
 
     /*              ***Footer***                   */
 
-    footer
+    #footer
     {
         display: flex;
         flex-direction: column;
@@ -458,7 +452,7 @@ body
 
     #bottom-footer
     {
-        background-color:hsl(168, 34%, 41%);
+        background-color:hsla(168, 34%, 41%, 0.774);
         height: 190px;
 
         width: 100%;
@@ -471,6 +465,8 @@ body
     {
         margin-top:30px;
         margin-bottom: 20px;
+        color: hsl(167, 40%, 24%);
+        
     }
 
     #data-footer
@@ -499,7 +495,6 @@ body
 
     
 
-
     #social a:hover
     {
         filter: invert(98%) sepia(1%) saturate(2%) hue-rotate(137deg) brightness(150%) contrast(100%);  /*Modification des images svg en blanc*/
@@ -508,3 +503,43 @@ body
     /*Tuto :            https://qastack.fr/programming/22252472/how-to-change-the-color-of-an-svg-element#:~:text=Si%20vous%20chargez%20SVG%20en,aide%20en%20ligne.*/
     /*Convertiseur:     https://codepen.io/sosuke/pen/Pjoqqp*/
 
+
+
+
+
+
+
+
+    @media screen and (max-width: 700px)
+    {/* vertion mobile ou inférieur à max-width */
+
+
+        body
+        {
+            width: 375px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color
+        }
+
+        header nav
+        {
+            display: none;
+        }
+    
+        h1
+        {
+            padding: 0 70px;
+        }
+        section
+        {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        footer
+        {
+            flex-direction: column;
+        }
+    }
