@@ -23,38 +23,38 @@
 
 
   <body>
-    <header id="header">
+    <header id="header" class="nav">
+
+      <a class="icon" onclick="myFunction()">
+        <img src="images/icons8-menu-48.png" alt="menu"><!--Ou en unicode: &#9776;--></img>
+      </a>
+
+      <div id="mobile_menu">
+        <div id="triangle"></div>
+      </div>
+
 
       <nav>
         <ul>
           <li>
-            <a class="boutons" href="">About</a>
+            <a class="boutons" href="#">About</a>
           </li>
 
           <li>
-            <a class="boutons" href="">Services</a>
+            <a class="boutons" href="#">Services</a>
           </li>
 
           <li>
-            <a class="boutons" href="">Projects</a>
+            <a class="boutons" href="#">Projects</a>
           </li>
 
           <li>
-            <a class="contact" href="">Contact</a>
+            <a class="contact" href="#">Contact</a>
           </li>
         </ul>
       </nav>
 
 
-      <div id ="mobile_menu_btn">
-        <a><img src="images/icons8-menu-48.png" alt="menu">
-        </img></a>
-      </div>
-
-      <div id="mobile_menu">
-        <div id="triangle"></div>
-      </div>
-      
 
       <h1>We are creatives</h1>
       
@@ -71,13 +71,14 @@
 
     <section id="section">
       <div class="element"><!--element 1-->
+
         <h2>Transform your <br/> brand</h2>
 
         <p>
           We are a full-service creative agency specializing in helping brands grow fast. 
           Engage your clients through compelling visuals that do most of the marketing for you.
         </p>
-        <p id="learn1"><a href="">Learn more</a></p>
+        <p id="learn1"><a href="#">Learn more</a></p>
         
       </div>
 
@@ -98,28 +99,35 @@
           Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
         </p>
 
-        <p id="learn2"><a href="">Learn more</a></p>
+        <p id="learn2"><a href="#">Learn more</a></p>
+
       </div>
 
       <div class="element"> <!--element 5-->
         
         <div class="text">
+
           <h2>Graphic Design</h2>
           <p>
             Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
           </p>
+
         </div>
+
       </div>
 
 
       <div class="element"> <!--element 6-->
         
         <div class="text">
+
           <h2>Photography</h2>
           <p>
             Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
           </p>
+
         </div>
+
       </div>
 
 
@@ -138,9 +146,11 @@
               <div class="name">Emily R.</div>
               <div class="position">Marketing Director</div>
             </p>
+
           </div>
 
           <div class="people">
+
             <img src="images/image-thomas.jpg" alt="Thomas picture"/>
 
             <p>
@@ -150,9 +160,11 @@
               <div class="name">Thomas S.</div>
               <div class="position">Chief Operating Officer</div>            
             </p>
+
           </div>
 
           <div class="people">
+
             <img src="images/image-jennie.jpg" alt="Jennie picture"/>
 
             <p>
@@ -162,7 +174,9 @@
               <div class="name">Jennie F.</div>
               <div class="position">Business Owner</div>   
             </p>
+
           </div>
+          
       </div>
     </section>
 
@@ -182,9 +196,9 @@
         <h2>sunnyside</h2>
 
         <div id="data-footer">
-          <a href="">About</a>
-          <a href="">Services</a>
-          <a href="">Projects</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
         </div>
 
         <div id="social">
@@ -201,10 +215,25 @@
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="">Félix DAVOUST</a>.
+      Coded by <a href="https://github.com/felix-D2" target="_blank">Félix DAVOUST</a>.
     </div>
+
+
+
+
+
+    <!--Use for mobile menu-->
+    <script>    
+      function myFunction() {
+          var x = document.getElementById("header");
+          if (x.className === "nav") {
+              x.className += " responsive";
+          } else {
+              x.className = "nav";
+          }
+      }
+    </script>
 
 
   </body>
 </html>
-
