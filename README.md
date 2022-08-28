@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-I have learned how to use JavaScript to do calculations and change the element properties of DOM.
+I have learned how to use HTML, CSS properties and Flexbox.
 
 
 ## Author
